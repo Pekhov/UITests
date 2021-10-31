@@ -1,7 +1,6 @@
 package ru.praktikum.yandex;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,7 +19,6 @@ public class QuestionsTest {
 
     @BeforeEach
     public void setUp() {
-        Configuration.holdBrowserOpen = true;
         mainPage = open(MainPage.URL, MainPage.class);
     }
 
